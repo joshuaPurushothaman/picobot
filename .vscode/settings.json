@@ -1,9 +1,18 @@
 {
-    "python.linting.enabled": true,
-    "python.languageServer": "Pylance",
-    "python.analysis.typeCheckingMode": "basic",
-    "micropico.syncFolder": "",
-    "micropico.openOnStart": true,
+    "micropico.softResetAfterUpload": true,
+    "micropico.syncFolder": "src",
+    "micropico.pyIgnore": [
+        "**/.picowgo",
+        "**/.micropico",
+        "**/.vscode",
+        "**/.gitignore",
+        "**/.git",
+        "**/.DS_Store",
+        "**/project.pico-go",
+        "**/env",
+        "**/venv",
+        "src/sim",
+    ],
     "python.analysis.typeshedPaths": [
         ".vscode\\Pico-W-Stub"
     ],
